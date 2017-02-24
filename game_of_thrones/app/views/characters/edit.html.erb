@@ -1,0 +1,19 @@
+<h2>Edit Character</h2>
+
+<%= form_for [@house, @character] do |f| %>
+
+<%= f.label :name %>
+<%= f.text_field :name %>
+
+<%= f.label :photo_url %>
+<%= f.text_field :photo_url %>
+
+<%= f.label :is_alive %>
+<%= f.text_field :is_alive %>
+
+  <%= f.submit %>
+<% end %>
+
+<%= form_for [@house, @character], method: :delete do |f| %>
+  <%= f.submit "Delete", class: "delete" %>
+<% end %>

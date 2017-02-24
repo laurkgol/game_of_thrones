@@ -1,0 +1,12 @@
+<h2> <%= @house.name %> </h2>
+<%= link_to "Edit House", edit_house_path %>
+<h3> <%= @house.slogan %>
+<img src = "<%= @house.photo_url %>">
+
+<h2> Characters </h2>
+<h3> <%= link_to "Add Character", new_house_character_path(@house) %>
+<% @house.characters.each do |character| %>
+  <div class = character>
+    <p><%= link_to character.name, house_character_path(@house) %></p>
+  </div>
+<% end %>

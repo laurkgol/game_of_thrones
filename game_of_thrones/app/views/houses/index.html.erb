@@ -1,0 +1,9 @@
+<h2>Houses of Westeros</h2>
+<h3><%= link_to "Add Houses", new_house_path %></h3>
+
+<% @houses.each do |house| %>
+<div class = "house">
+  <%= link_to house.name, house %>
+  <img src ="<%= house.photo_url %>">
+</div>
+<% end %>
