@@ -7,6 +7,6 @@
 <h3> <%= link_to "Add Character", new_house_character_path(@house) %>
 <% @house.characters.each do |character| %>
   <div class = character>
-    <p><%= link_to character.name, house_character_path(@house) %></p>
+    <p><%= link_to character.name, house_character_path(@house, character)%></p>
   </div>
 <% end %>

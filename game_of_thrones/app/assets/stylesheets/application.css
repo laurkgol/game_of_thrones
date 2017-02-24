@@ -13,10 +13,24 @@
  *= require_tree .
  *= require_self
  */
+body{
+  background-image: url("https://images4.alphacoders.com/242/242556.png");
+  font-family: "thrones";
+
+}
 img {
   width: 100pt;
 }
 
 .character-img {
   width: 200pt;
+}
+
+@font-face {
+  font-family: "thrones";
+  src: url('game_of_thrones.ttf') format("truetype");
+}
+
+h1{
+  font-family: "thrones";
 }

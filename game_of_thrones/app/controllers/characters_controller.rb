@@ -20,8 +20,6 @@ class CharactersController < ApplicationController
      #show
      def show
        @character = Character.find(params[:id])
-       @house = House.find(params[:house_id])
-
      end
 
      # edit
